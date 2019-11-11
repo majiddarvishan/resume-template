@@ -167,11 +167,13 @@ section.experience .section-item .item-info {
   background-color: var(--yellow);
   height: 1px;
 }
-
-
 section.experience .item-body{
   margin: 15px 0 0 0;
   padding: 0 30px 0 0;
   text-align: justify;
 
+}
+section.experience .item-body ul {
+  margin-left: 20px;
+  list-style-type: disc;
 }
