@@ -199,3 +199,34 @@ section.experience .item-body ul {
   margin-top: 10px;
   margin-left: 20px;
 }
+
+/* SECTION SKILL */
+section.skill .section-body{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-gap: 20px;
+}
+
+
+section.skill .section-body ul {
+  margin-left: 0px;
+}
+
+
+/* SECTION REFERENCES */
+section.reference .section-body{
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr;
+  grid-gap: 20px;
+}
+
+/* SECTION INTEREST */
+section.interest svg{
+  fill: var(--yellow)
+}
+section.interest .section-body{
+  margin-top:20px;
+  display: grid;
+  grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 20px;
+}
