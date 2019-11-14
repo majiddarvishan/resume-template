@@ -18,6 +18,9 @@ body {
   background: var(--gray);
   color: var(--black);
 }
+strong{
+  font-weight: bold;
+}
 
 svg {
   max-width: 100%;
@@ -30,7 +33,9 @@ svg {
   height: 2em;
   overflow: visible;
 }
-
+p{
+  margin-bottom: 10px;
+}
 a {
   color: var(--black);
   text-decoration: none;
@@ -39,6 +44,19 @@ a {
 a:hover {
   text-decoration: underline;
 }
+ul{
+  list-style: none;
+}
+ul li::before { 
+  content: "\2022";
+  color: var(--yellow);
+  font-size: 30px;
+  display: inline-block;
+  width: 0.5em;
+  margin-left: 0em;
+  line-height: 30px;
+}
+
 
 .container {
   max-width: 960px;
@@ -74,34 +92,34 @@ section {
 .section-title {
   font-weight: bold;
   font-size: 25px;
-  border-bottom: 1px solid #f7ca34;
+  border-bottom: 1px solid var(--yellow);
+}
+.section-body{
+  margin-top: 10px;
 }
 
 /* SECTION NAME */
 section.name {
   color: #2d2c34;
-  padding: 0px;
+  padding: 0px;  
+  position: relative;
 }
+
 section.name img{
   max-width: 100%;
   max-height: 100%;
 }
-section.name>.section-title {
+section.name .section-title {
+  position: absolute;
+  bottom: 0px;
   padding: 0 0 10px 48px;
   line-height: 45px;
   font-size: 45px;
-  background-color: #f7ca34;
+  background: rgb(247, 202, 52,0.9);
   
   
 }
 
-section.name>.section-body {
-  padding: 0px 0px 12px 48px;
-  font-size: medium;
-  background-color: #2d2c34;
-  color: white;
-  font-weight: 600;
-}
 
 /* SECTION CONTACT */
 section.contact {
@@ -178,6 +196,6 @@ section.experience .item-body{
 
 }
 section.experience .item-body ul {
+  margin-top: 10px;
   margin-left: 20px;
-  list-style-type: disc;
 }
