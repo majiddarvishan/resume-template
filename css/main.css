@@ -17,6 +17,7 @@ body {
   line-height: 1.5;
   background: var(--gray);
   color: var(--black);
+  -webkit-print-color-adjust: exact;
 }
 strong{
   font-weight: bold;
@@ -77,6 +78,7 @@ ul li::before {
   background: #2d2c34;
   color:var(--white);
   font-size: small;
+  -webkit-print-color-adjust: exact;
 }
 
 .panel.left a {
@@ -251,4 +253,8 @@ section.interest .section-body{
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
+}
+@page {
+  size: auto;
+  margin: 10px;
 }
