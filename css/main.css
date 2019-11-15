@@ -34,7 +34,8 @@ svg {
   overflow: visible;
 }
 p{
-  margin-bottom: 10px;
+  margin-bottom: 10px;  
+  text-align: justify;  
 }
 a {
   color: var(--black);
@@ -74,12 +75,12 @@ ul li::before {
 
 .panel.left {
   background: #2d2c34;
-  color: white;
+  color:var(--white);
   font-size: small;
 }
 
 .panel.left a {
-  color: white;
+  color: var(--white);
 }
 
 /*
@@ -163,6 +164,10 @@ section.language .section-item {
 section.language .section-item .item-title {
   margin: 0 40px 0 0;
 }
+/* SECTION SUMMARY */
+section.summary .section-body{
+  padding: 0 30px 0 0;
+}
 
 /* SECTION EXPERIENCE */
 section.experience .section-item{
@@ -191,7 +196,6 @@ section.experience .section-item .item-info {
 section.experience .item-body{
   margin: 15px 0 0 0;
   padding: 0 30px 0 0;
-  text-align: justify;  
   font-size: small;
 
 }
@@ -216,16 +220,34 @@ section.skill .section-body ul {
 /* SECTION REFERENCES */
 section.reference .section-body{
   display: grid;
-  grid-template-columns:  1fr 1fr 1fr;
+  grid-template-columns:  1fr 1fr ;
   grid-gap: 20px;
+  font-size: 13px;
 }
+section.reference .section-body .item-contact{
+  padding: 10px 0 0 0;
+}
+section.reference .section-body svg{
+  max-width: 15px;
+  max-height: 15px;
+}
+
+section.reference .item-title{
+  font-weight: 900;
+  font-size: 20px;
+}
+section.reference .item-pos{
+  font-weight: bold;
+}
+
+
 
 /* SECTION INTEREST */
 section.interest svg{
   fill: var(--yellow)
 }
 section.interest .section-body{
-  margin-top:20px;
+  margin:20px 20px 0 0;
   display: grid;
   grid-template-columns:  1fr 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
